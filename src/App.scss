@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+.App{
+  
+  position: relative;
+  -webkit-tap-highlight-color: transparent;  
+  animation: emerge 1s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; 
+  
+}
+
+
+@keyframes emerge {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+//////\\\\\\
+//font-style
+//////\\\\\\
+.ffam-lato{
+  font-family:'Lato',sans-serif
+}
+.ffam-mont{
+  font-family:'Montserrat',sans-serif
+}
+
+
+//////\\\\\\
+//font-size
+//////\\\\\\
+.fs-xl{
+  font-size:4rem;
+}
+.fs-xlm{
+  font-size:3.5rem;
+}
+.fs-l{
+  font-size: 2rem;
+}
+.fs-m{
+  font-size: 1.65rem
+}
+.fs-ms{
+  font-size: 1.15rem
+}
+.fs-s{
+  font-size: 0.95rem;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+.fs-roadmap{
+  font-size: 0.89rem;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+}
+.fs-xs{
+  font-size: 0.85rem;
+}
+.fs-xxs{
+  font-size: 0.65rem;
+}
+
+
+@media screen and (max-width:500px) {
+  .fs-l{
+    font-size: 1.6rem;
+  }
+  .fs-s{
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+  }
+  .fs-ms{
+    font-size: 0.95rem
+  }
+}
+
+
+//////\\\\\\
+//font-color
+//////\\\\\\
+.tc-white{
+  color:#ffffff;
+}
+.tc-orange{
+  color:#a96512;
+}
+.tc-green{
+  color:#84834e;
+}
+.tc-gold{
+  color:#c1b159 ;
+}
+.tc-l-gray{
+  color:rgb(205, 205, 205) ;
+}
+
+
+
+//font-weight
+.fw-bold{
+  font-weight:bold;
+}
+.fw-semi-bold{
+  font-weight:600;
+}
+.fw-extra-bold{
+  font-weight:800;
+}
+.fw-black{
+  font-weight:900;
+}
+.fw-regular{
+  font-weight: 400;
+}
+.fw-light{
+  font-weight: 300;
+}
+
+.test-div{
+  height:7000px;
+
+}
+
