@@ -30,13 +30,13 @@ function App(){
       <BackstageSection/>
       <FactsSection/>
       <Roadmap/>
-      {/* <div className='verified-address'>
+      <div className='verified-address'>
         <p className='ffam-lato fs-ms tc-white fw-black' >VERIFIED SMART CONTRACT ADDRESS: </p>
 
         <a href='https://etherscan.io/address/0x99FE12f25703811d31E1a7A9156d1E56e3F9fcCD' className='ffam-lato fs-ms tc-gold fw-black'>
         0x99FE12f25703811d31E1a7A9156d1E56e3F9fcCD
         </a>
-      </div> */}
+      </div>
       <Footer/>
     </div>
   );

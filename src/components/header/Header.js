@@ -29,10 +29,17 @@ function Header() {
             //     setLocations(['home','backstage'])
             //     break
             case '/':
-                // setLocations(['mint','about','backstage','basics','roadmap'])
-                setLocations(['about','basics','roadmap'])
+                // setLocaions(['mint','about','backstage','basics','roadmap'])
+                setLocations(['about','basics','roadmap','news'])
 
                 break
+
+            case '/news':
+                setLocations(['home'])
+
+                break
+            
+            
             // case '/backstage':
             //     setLocations(['home','mint'])
             //     break
@@ -94,6 +101,9 @@ function Header() {
                 break
             case 'home':
                 navigateTo('/')
+                break
+            case 'news':
+                navigateTo('/news')
                 break
             case 'backstage':
                 navigateTo('/backstage')

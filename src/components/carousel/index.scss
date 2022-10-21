@@ -1,0 +1,155 @@
+.ProjectCarousel{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+ 
+    box-sizing: content-box;
+   
+}
+.ProjectCarousel-inner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1110px;
+    height: 100%;
+    transition:transform 150ms ease-in-out,opacity 100ms ease-in-out;
+    border-radius: 7px;
+   
+    margin:auto;
+    max-width: 85vw;
+}
+.ProjectCarousel-left{
+    margin:auto;
+    position: relative;
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: left 500ms ease-in-out;
+    margin-top: 2.5rem;
+}
+#carousel-track{
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    transition: all 500ms ease-in-out;
+    left:-1px;
+    height: 100%;
+    background-color: white;
+}
+.carousel-img-holder{ 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.carousel-img-holder>video{ 
+    height: 100%;
+    width: 100%;
+    
+}
+
+.ProjectCarousel-arrowNext, .ProjectCarousel-arrowBack{
+    position: absolute;
+    height: 7.9%;
+    top:0;
+    bottom: 0;
+    right:0;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 3.2vh;
+    cursor: pointer;
+}
+.ProjectCarousel-arrowBack{
+    left: 0;
+    margin-left: 3.2vh;
+}
+.ProjectCarousel-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width:41%;
+    // padding-left: 4.3%;
+    
+}
+.ProjectCarousel-rightTitle{
+    color:var(--base-white);
+    font:var(--project-carousel-fontsize);
+    text-align: start;
+    max-width: 80%;
+}
+.ProjectCarousel-right>p{
+    color:var(--base-gray);
+    font:var(--large-desc-fontsize);
+    text-align: start;
+    max-width: 92%;
+    margin-top: 2vh;
+}
+.ProjectCarousel-progressViewer{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin-bottom: -1%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width:fit-content;
+    height:3.7%;
+}
+.ProjectCarousel-progressIndicator{
+    border-radius:360px;
+    width:1.02vh;
+    height:1.02vh;
+    margin:6px;
+    background-color: rgba(255,48,48,255);
+    transition:background-color 300ms ease-in-out;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1150px){
+    .ProjectCarousel{
+        height: fit-content;
+    }
+    .ProjectCarousel-inner{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
+    .ProjectCarousel-right{
+        width:500px;
+        margin-top:1rem;
+    }
+    .ProjectCarousel-progressViewer{
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .ProjectCarousel{
+        height: fit-content;
+    }
+    .ProjectCarousel-inner{
+        flex-direction: column;
+
+    }
+    .ProjectCarousel-left{
+        height: 85vw;
+        width: 85vw;
+    }
+    .ProjectCarousel-right{
+        width:85vw;
+    }
+    // .ProjectCarousel-progressViewer{
+    //     // bottom: -11%;
+    // }
+}

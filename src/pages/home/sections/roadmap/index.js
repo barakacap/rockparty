@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 import './index.scss'
 
-import nftVideo from '../../../../assets/videos/nft2.mp4'
-import nftVideoWebm from '../../../../assets/videos/nft2.mp4'
+import nftVideo from '../../../../assets/videos/nft.mp4'
+import nftVideoWebm from '../../../../assets/videos/nft.mp4'
+
+// import ProjectCarousel from '../../../../components/carousel'
+
 
 function index() {
     let observer= new IntersectionObserver(function(entries) {
@@ -89,10 +92,14 @@ function index() {
             <div className='roadmap-inner'>
                 <div className='roadmap-left'>
                     <video loop muted autoPlay playsInline>
-                        <source src={nftVideoWebm} />
+                        {/* <source src="https://drive.google.com/uc?export=download&id=1z4RtgfwbEv8HtpywJB6WwNm_XGBkHI7y"/> */}
+                        <source src={nftVideoWebm}/>
                         <source src={nftVideo} />
                     </video>
+                    {/* <ProjectCarousel/> */}
                 </div>
+                {/* <iframe frameborder="0"  className='roadmap-left' src="https://drive.google.com/file/d/1z4RtgfwbEv8HtpywJB6WwNm_XGBkHI7y/preview?controls=0" allow="autoplay"></iframe> */}
+
                 <div className='roadmap-right'>
                     <div className='project-progress'>
                     </div>
@@ -114,7 +121,7 @@ function index() {
                         </p>
                     </div>
                 
-                    <div id='mint-road4' className='mint-roadmap-section'>
+                    <div id='mint-road3' className='mint-roadmap-section'>
                         <div className='mint-roadmap-circle  fs-roadmap ffam-mont fw-bold'>3</div>
                         <span className='font-m ffam-montserrat fw-bold tc-white'>October 21, 2022</span>
                    
