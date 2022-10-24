@@ -1,88 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef ,useState} from 'react'
 import './index.scss'
 
 import nftVideo from '../../../../assets/videos/nft.mp4'
-import nftVideoWebm from '../../../../assets/videos/nft.mp4'
+import nftVideoWebm from '../../../../assets/videos/nft.webm'
 
 // import ProjectCarousel from '../../../../components/carousel'
-
+import playingImg from '../../../../assets/images/playing.png'
+import mutedImg from '../../../../assets/images/muted.png'
 
 function index() {
-    let observer= new IntersectionObserver(function(entries) {
-        let progress=document.getElementsByClassName('project-progress-inner')[0]
-        for(var i=0;i<entries.length;i++){
-          if(entries[i].intersectionRect.top>0&&entries[i].isIntersecting===true){
-            switch(Math.round(entries[i].intersectionRatio*10)){
-                case 0:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-                    break;
-                case 1:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 2:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 3:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 4:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 5:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 6:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 7:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 8:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 9:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                case 10:
-                    entries[i].target.style.top='-70px';
-                    entries[i].target.style.opacity=`1`;
-
-                    break;
-                default:
-                    break;
-            }
-          }
-        }
-    },{ threshold: [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
-
-    useEffect(()=>{
-        // observer.observe(document.getElementById('mint-road1'));
-        // observer.observe(document.getElementById('mint-road2'));
-        // observer.observe(document.getElementById('mint-road3'));
-        // observer.observe(document.getElementById('mint-road4'));
-        // // observer.observe(document.getElementById('mint-road5'));
-
-    },[])
+    const video = useRef()
+    const[playing,setPlaying]=useState(false)
+    const setAudio=()=>{
     
+        if(playing){
+            video.current.muted=true
+        }
+        else{
+            video.current.muted=false
+        }
+        setPlaying(!playing)
+    
+    }
+  
     return (
         <div className='roadmap'>
             
@@ -91,12 +31,24 @@ function index() {
             
             <div className='roadmap-inner'>
                 <div className='roadmap-left'>
-                    <video loop muted autoPlay playsInline>
+                    <video ref={video} loop muted autoPlay playsInline>
                         {/* <source src="https://drive.google.com/uc?export=download&id=1z4RtgfwbEv8HtpywJB6WwNm_XGBkHI7y"/> */}
                         <source src={nftVideoWebm}/>
                         <source src={nftVideo} />
                     </video>
                     {/* <ProjectCarousel/> */}
+
+                    <div onClick={()=>{setAudio()}} className='roadmap-audio'>
+                        {
+                        playing===true?
+                        <img id='top-section-playing' src={playingImg}/>
+                        :playing===false?
+                        <img src={mutedImg}/>
+                        :null
+                        }
+                    
+                    </div>
+
                 </div>
                 {/* <iframe frameborder="0"  className='roadmap-left' src="https://drive.google.com/file/d/1z4RtgfwbEv8HtpywJB6WwNm_XGBkHI7y/preview?controls=0" allow="autoplay"></iframe> */}
 

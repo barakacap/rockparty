@@ -6,9 +6,9 @@ import mainVideoWebm from '../../../../assets/videos/STAGE-CROWD.webm'
 // import mainVideoMobile from '../../../../assets/videos/stage-mobile.mp4'
 
 
-import playingImg from '../../../../assets/images/playing.png'
-import mutedImg from '../../../../assets/images/muted.png'
-import rockMusic from '../../../../assets/music/rock.mp3'
+// import playingImg from '../../../../assets/images/playing.png'
+// import mutedImg from '../../../../assets/images/muted.png'
+// import rockMusic from '../../../../assets/music/rock.mp3'
 
 function TopSection() {
   const[playing,setPlaying]=useState(false)
@@ -38,25 +38,25 @@ function TopSection() {
 
   }
 
-  const setAudio=()=>{
+  // const setAudio=()=>{
   
-    if(playing){
-      music.pause()
-    }
-    else{
-      music.play()
-    }
-    setPlaying(!playing)
+  //   if(playing){
+  //     music.pause()
+  //   }
+  //   else{
+  //     music.play()
+  //   }
+  //   setPlaying(!playing)
   
-  }
+  // }
   
 
   useEffect(()=>{
 
-    let music=new Audio;
-    music.src=rockMusic
-    music.loop=true
-    setMusic(music)
+    // let music=new Audio;
+    // music.src=rockMusic
+    // music.loop=true
+    // setMusic(music)
 
     // let topSectionVideo=document.getElementsByClassName('top-section-video')[0]
     // let app=document.getElementsByClassName('App')[0]
@@ -134,7 +134,7 @@ function TopSection() {
 
       <div className='top-section-inner'>
       </div>
-      <div onClick={()=>{setAudio()}} className='top-section-audio'>
+      {/* <div onClick={()=>{setAudio()}} className='top-section-audio'>
         {
           playing===true?
           <img id='top-section-playing' src={playingImg}/>
@@ -143,7 +143,7 @@ function TopSection() {
           :null
         }
        
-      </div>
+      </div> */}
   
     </div>
   )

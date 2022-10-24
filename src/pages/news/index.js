@@ -30,9 +30,24 @@ function App(){
         />
         <NewsArticle 
           title='Rock Party Labs Announces Rock Party Classic 3D NFT Collection'
-          author='YOUTUBE'
+          author='Crypto Romo'
+          platform='youtube'
           logo={youtube}
           link='https://youtu.be/KnfAnZJQT9E'
+        />
+         <NewsArticle 
+          title='Rock Party Labs Announces Rock Party Classic 3D NFT Collection'
+          author='Crypto Romo'
+          platform='youtube'
+          logo={youtube}
+          link='https://youtu.be/Ks5zVnHylFk'
+        />
+         <NewsArticle 
+          title='Rock Party Labs Announces Rock Party Classic 3D NFT Collection'
+          author='Monica Bellamore'
+          platform='youtube'
+          logo={youtube}
+          link='https://youtu.be/Bq-JD4EN0zI'
         />
         <NewsArticle 
           title='Rock Party Labs Announces Rock Party Classic 3D NFT Collection'
