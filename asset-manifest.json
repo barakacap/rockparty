@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e48a7f8b.chunk.css",
-    "main.js": "/static/js/main.0e3ac839.chunk.js",
-    "main.js.map": "/static/js/main.0e3ac839.chunk.js.map",
+    "main.js": "/static/js/main.71d47471.chunk.js",
+    "main.js.map": "/static/js/main.71d47471.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cea6baae.js",
     "runtime-main.js.map": "/static/js/runtime-main.cea6baae.js.map",
     "static/css/2.b28305bc.chunk.css": "/static/css/2.b28305bc.chunk.css",
@@ -14,8 +14,8 @@
     "static/css/2.b28305bc.chunk.css.map": "/static/css/2.b28305bc.chunk.css.map",
     "static/css/main.e48a7f8b.chunk.css.map": "/static/css/main.e48a7f8b.chunk.css.map",
     "static/js/2.cccef863.chunk.js.LICENSE.txt": "/static/js/2.cccef863.chunk.js.LICENSE.txt",
-    "static/media/backstage.4581adb1.mp4": "/static/media/backstage.4581adb1.mp4",
-    "static/media/backstage.b2f10aad.webm": "/static/media/backstage.b2f10aad.webm",
+    "static/media/backstage.15e5f1ee.mp4": "/static/media/backstage.15e5f1ee.mp4",
+    "static/media/backstage.a80a7e1b.webm": "/static/media/backstage.a80a7e1b.webm",
     "static/media/coinbase.7af5289d.webp": "/static/media/coinbase.7af5289d.webp",
     "static/media/design.5010fa5b.svg": "/static/media/design.5010fa5b.svg",
     "static/media/guitars.b1357882.webp": "/static/media/guitars.b1357882.webp",
@@ -34,6 +34,6 @@
     "static/css/2.b28305bc.chunk.css",
     "static/js/2.cccef863.chunk.js",
     "static/css/main.e48a7f8b.chunk.css",
-    "static/js/main.0e3ac839.chunk.js"
+    "static/js/main.71d47471.chunk.js"
   ]
 }
